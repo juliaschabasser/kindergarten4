@@ -25,7 +25,6 @@ export class AddDataComponent implements OnInit{
   onSubmit() {
     if(this.addChildForm.valid) {
       this.backendService.addChildData(this.addChildForm.value);
-      this.addChildForm.reset();
     }
   }
 }
