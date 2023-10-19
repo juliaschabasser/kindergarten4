@@ -23,7 +23,7 @@ export class BackendService {
     });
     }
 
-    public async addChildData(child: Child) {
+    public addChildData(child: Child) {
       this.http.post('http://localhost:5000/childs', child).subscribe(_ => {
         this.getChildren();
       })
